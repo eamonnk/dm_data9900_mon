@@ -1,0 +1,88 @@
+import re
+
+def parse_review_time(text):
+    text = text.lower().strip()
+    
+    if "hour" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(hours=n)
+    
+    if "day" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(days=n)
+    
+    if "week" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(weeks=n)
+    
+    if "month" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.DateOffset(months=n)
+    
+    if "year" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.DateOffset(years=n)
+    
+    return pd.NaT
+
+
+import re
+
+def review_time_to_cat(text):
+    text = text.lower().strip()
+    
+    if "hour" in text:
+        return "last_day"
+    
+    if "day" in text:
+        return "last_week"
+    
+    if "week" in text:
+        return "last_month"
+    
+    if "month" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        if n <= 3:
+            return "last_3_months"
+        elif n <= 6:
+            return "last_6_months"
+        else:
+            return "last_year"
+    
+    if "year" in text:
+        return "over_1_year"
+    
+    return "unknown"
+
+
+import re
+import pandas as pd
+
+today = pd.Timestamp.today().normalize()
+
+def review_time_to_datetime(text):
+    text = text.lower().strip()
+    
+    if "hour" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(hours=n)
+    
+    if "day" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(days=n)
+    
+    if "week" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.Timedelta(weeks=n)
+    
+    if "month" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.DateOffset(months=n)
+    
+    if "year" in text:
+        n = int(re.findall(r"\d+", text)[0]) if re.findall(r"\d+", text) else 1
+        return today - pd.DateOffset(years=n)
+    
+    return pd.NaT
+
+
