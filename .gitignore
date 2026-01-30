@@ -1,0 +1,87 @@
+############################
+# OS / System files
+############################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+############################
+# Editor / IDE
+############################
+
+# VS Code
+.vscode/
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# Jupyter
+.ipynb_checkpoints/
+
+############################
+# Python
+############################
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.env/
+.venv/
+venv/
+ENV/
+
+############################
+# R
+############################
+
+# R build / temp
+*.Rproj
+
+############################
+# Quarto
+############################
+
+# Quarto build output (optional – see note below)
+_site/
+.quarto/
+
+############################
+# Data / outputs (optional)
+############################
+
+# Large or derived data – uncomment if needed
+# data/raw/
+# data/processed/
+# *.csv
+# *.parquet
+# *.rds
+
+############################
+# Models / binaries
+############################
+
+# model artefacts
+*.pkl
+*.joblib
+*.pt
+*.h5
+
+############################
+# Logs / temp
+############################
+
+*.log
+*.tmp
+*.bak
