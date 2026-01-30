@@ -1,0 +1,26 @@
+Definitions of data mining – Part 3
+www.bbn.com/utility/glossary/d 
+www.albany.edu/its/glossary.htm 
+...www.xsb.com/glossary.aspx  >>>> https://xsb.com/ 
+genres.biocomp.bioen.uiuc.edu/oscar/algorithmDesc.aspx  
+https://www.hsls.pitt.edu/obrc/index.php?page=URL1212675037
+
+wordnetweb.princeton.edu/perl/webwn - word net
+en.wikipedia.org/wiki/Data_mining 
+en.wiktionary.org/wiki/data_mining 
+
+> copy all text amd images into a .docx file...
+> one .docx page per slide
+> section titles shodul be H3
+> in each slide, header is H4 
+> all text should be normal except if bulleted list should be bulleted list
+> do not include page numbers in the text or headers or n the docx
+> all images shodul be after the slide text
+> make a copy of all references out also to end of the docx, leaving them in place were they are aswell
+> all header text as blue
+> normal text as black 
+> All images should be reduced in size 
+> all normal taxt in each slide bulleted, except header  
+> do not oputput the resultant content here, only in the .docx file which I will download for study purposes.
+
+> watched out for text boxes - as yuo ahve missed a few when boxed
